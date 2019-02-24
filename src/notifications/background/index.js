@@ -67,7 +67,7 @@ export default class NotificationBackground {
         ))[NotificationBackground.LAST_NOTIF_TIME]
 
         for (let notification of notifications.NOTIFS) {
-            if (notification.id === `direct_links_inital_notification`) {
+            if (notification.id === 'restore') {
                 if (
                     !lastReleaseTime ||
                     lastReleaseTime < notification.sentTime
@@ -95,7 +95,8 @@ export default class NotificationBackground {
                     )
                 }
             }
-            if (notification.id === 'backups_launch') {
+
+            if (notification.id === 'restore' && notification.overview) {
                 notification = {
                     ...notification.overview,
                     id: notification.id,

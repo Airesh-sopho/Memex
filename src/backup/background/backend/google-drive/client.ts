@@ -1,5 +1,4 @@
 import { DriveTokenManager } from './token-manager'
-import sendNotifOnNetworkFailure from '../../../../util/send-notification'
 
 export class GoogleDriveClient {
     private idCache: {

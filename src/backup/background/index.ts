@@ -1,7 +1,7 @@
 import Queue, { Options as QueueOpts } from 'queue'
 import { makeRemotelyCallable } from '../../util/webextensionRPC'
-import { StorageManager } from '../../search/types'
 import sendNotif from '../../util/send-notification'
+import { StorageManager } from '../../search/types'
 import { setupRequestInterceptors } from './redirect'
 import BackupStorage, { LastBackupStorage } from './storage'
 import { BackupBackend } from './backend'
